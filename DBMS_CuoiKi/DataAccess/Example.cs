@@ -22,11 +22,11 @@ namespace DBMS_CuoiKi.DataAccess
             // result chi co 1 gia tri
             SqlHelper.ExecuteScalar("procedure", CommandType.StoredProcedure, parameter1);
 
-            // khong paramenter
-            SqlHelper.Execute("procedure", CommandType.StoredProcedure, null);
+            // khong paramenter, khong tra ve gia tri
+            SqlHelper.ExecuteNonQuery("procedure", CommandType.StoredProcedure, null);
         }
 
-        private void CallFunction()
+        private float CallFunction()
         {
             //fn_TinhTienHoaDon (@mahoadon VARCHAR(10))
             // function(@para varchar(100)) => return varchar
@@ -39,7 +39,7 @@ namespace DBMS_CuoiKi.DataAccess
             // lay ket qua, gia tri nhan duoc o trong bien res
             SqlHelper.ExecuteScalar("dbo.fn_TinhTienHoaDon", CommandType.StoredProcedure, parameter1, res);
             // ep khieu bien res phu hop voi kieu tra ve
-            // return (string)res
+            return (float)res.Value;
         }
 
         private void Query()
