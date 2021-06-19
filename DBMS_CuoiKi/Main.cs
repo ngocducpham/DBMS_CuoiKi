@@ -24,7 +24,7 @@ namespace DBMS_CuoiKi
                 dgvMonAn.DataSource = MonAn.Load();
                 dgvChiTietHD.DataSource = ChiTietHoaDon.Load();
             }
-            catch { }
+            catch(Exception ex) { MessageBox.Show(ex.Message); }
         }
 
         #region Tab NhanVien
