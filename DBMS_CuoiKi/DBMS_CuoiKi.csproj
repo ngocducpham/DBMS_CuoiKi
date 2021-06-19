@@ -46,6 +46,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Business\Account.cs" />
+    <Compile Include="Business\ChiTietHoaDon.cs" />
+    <Compile Include="Business\GiamGia.cs" />
+    <Compile Include="Business\HoaDon.cs" />
+    <Compile Include="Business\KhachHang.cs" />
+    <Compile Include="Business\MonAn.cs" />
+    <Compile Include="Business\NhanVien.cs" />
+    <Compile Include="Business\User.cs" />
+    <Compile Include="DataAccess\Example.cs" />
+    <Compile Include="DataAccess\SqlHelper.cs" />
     <Compile Include="Main.cs">
       <SubType>Form</SubType>
     </Compile>

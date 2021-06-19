@@ -30,14 +30,14 @@ namespace DBMS_CuoiKi
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtServer = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtDatabase = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtUser = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.txtPassWord = new System.Windows.Forms.TextBox();
+            this.btnLogin = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -49,12 +49,13 @@ namespace DBMS_CuoiKi
             this.label1.TabIndex = 0;
             this.label1.Text = "Server";
             // 
-            // textBox1
+            // txtServer
             // 
-            this.textBox1.Location = new System.Drawing.Point(101, 4);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(270, 22);
-            this.textBox1.TabIndex = 1;
+            this.txtServer.Location = new System.Drawing.Point(101, 4);
+            this.txtServer.Name = "txtServer";
+            this.txtServer.Size = new System.Drawing.Size(270, 22);
+            this.txtServer.TabIndex = 1;
+            this.txtServer.Text = "192.168.0.103";
             // 
             // label2
             // 
@@ -65,12 +66,13 @@ namespace DBMS_CuoiKi
             this.label2.TabIndex = 0;
             this.label2.Text = "Database";
             // 
-            // textBox2
+            // txtDatabase
             // 
-            this.textBox2.Location = new System.Drawing.Point(101, 36);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(270, 22);
-            this.textBox2.TabIndex = 1;
+            this.txtDatabase.Location = new System.Drawing.Point(101, 36);
+            this.txtDatabase.Name = "txtDatabase";
+            this.txtDatabase.Size = new System.Drawing.Size(270, 22);
+            this.txtDatabase.TabIndex = 2;
+            this.txtDatabase.Text = "QuanLyQuanAnNhanh";
             // 
             // label3
             // 
@@ -81,53 +83,58 @@ namespace DBMS_CuoiKi
             this.label3.TabIndex = 0;
             this.label3.Text = "User";
             // 
-            // textBox3
+            // txtUser
             // 
-            this.textBox3.Location = new System.Drawing.Point(101, 70);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(270, 22);
-            this.textBox3.TabIndex = 1;
+            this.txtUser.Location = new System.Drawing.Point(101, 70);
+            this.txtUser.Name = "txtUser";
+            this.txtUser.Size = new System.Drawing.Size(270, 22);
+            this.txtUser.TabIndex = 3;
+            this.txtUser.Text = "sa";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(12, 109);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(68, 17);
+            this.label4.Size = new System.Drawing.Size(69, 17);
             this.label4.TabIndex = 0;
-            this.label4.Text = "Passwork";
+            this.label4.Text = "Password";
             // 
-            // textBox4
+            // txtPassWord
             // 
-            this.textBox4.Location = new System.Drawing.Point(101, 106);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(270, 22);
-            this.textBox4.TabIndex = 1;
+            this.txtPassWord.Location = new System.Drawing.Point(101, 106);
+            this.txtPassWord.Name = "txtPassWord";
+            this.txtPassWord.PasswordChar = '*';
+            this.txtPassWord.Size = new System.Drawing.Size(270, 22);
+            this.txtPassWord.TabIndex = 4;
+            this.txtPassWord.Text = "123";
             // 
-            // button1
+            // btnLogin
             // 
-            this.button1.Location = new System.Drawing.Point(278, 150);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(93, 34);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Login";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnLogin.Location = new System.Drawing.Point(278, 150);
+            this.btnLogin.Name = "btnLogin";
+            this.btnLogin.Size = new System.Drawing.Size(93, 34);
+            this.btnLogin.TabIndex = 5;
+            this.btnLogin.Text = "Login";
+            this.btnLogin.UseVisualStyleBackColor = true;
+            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(397, 200);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.btnLogin);
+            this.Controls.Add(this.txtPassWord);
+            this.Controls.Add(this.txtUser);
+            this.Controls.Add(this.txtDatabase);
+            this.Controls.Add(this.txtServer);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "Login";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -137,13 +144,13 @@ namespace DBMS_CuoiKi
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtServer;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtDatabase;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtUser;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox txtPassWord;
+        private System.Windows.Forms.Button btnLogin;
     }
 }
