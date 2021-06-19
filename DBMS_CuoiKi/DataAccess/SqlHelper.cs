@@ -18,7 +18,7 @@ namespace DataAccess
                     return true;
                 }
             }
-            catch (SqlException)
+            catch
             {
                 return false;
             }

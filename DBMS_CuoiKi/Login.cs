@@ -29,7 +29,7 @@ namespace DBMS_CuoiKi
             }
 
             Hide();
-            Main main = new Main();
+            Main main = new Main(txtDatabase.Text);
             if (main.ShowDialog() == DialogResult.Cancel)
                 Show();
         }

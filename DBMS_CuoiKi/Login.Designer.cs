@@ -72,7 +72,7 @@ namespace DBMS_CuoiKi
             this.txtDatabase.Name = "txtDatabase";
             this.txtDatabase.Size = new System.Drawing.Size(270, 22);
             this.txtDatabase.TabIndex = 2;
-            this.txtDatabase.Text = "QuanLyQuanAnNhanh";
+            this.txtDatabase.Text = "QuanLyQuanAnNhanh2";
             // 
             // label3
             // 

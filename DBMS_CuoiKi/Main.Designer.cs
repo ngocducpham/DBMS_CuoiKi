@@ -37,11 +37,16 @@ namespace DBMS_CuoiKi
             this.nv_btnAdd = new System.Windows.Forms.Button();
             this.nv_txtSDT = new System.Windows.Forms.TextBox();
             this.nv_btnReload = new System.Windows.Forms.Button();
+            this.nv_txtNgaySinh = new System.Windows.Forms.TextBox();
+            this.nv_txtLuong = new System.Windows.Forms.TextBox();
             this.nv_txtHoTen = new System.Windows.Forms.TextBox();
+            this.nv_txtGioiTinh = new System.Windows.Forms.TextBox();
             this.nv_txtMaNV = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.label39 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.label38 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.hd_btnUpdate = new System.Windows.Forms.Button();
@@ -151,9 +156,8 @@ namespace DBMS_CuoiKi
             this.user_txtLoginName = new System.Windows.Forms.TextBox();
             this.label33 = new System.Windows.Forms.Label();
             this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.tabPage9 = new System.Windows.Forms.TabPage();
-            this.nv_txtNgaySinh = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.tabPage9 = new System.Windows.Forms.TabPage();
             this.tabControl1.SuspendLayout();
             this.tabNhanVien.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvNhanVien)).BeginInit();
@@ -202,11 +206,15 @@ namespace DBMS_CuoiKi
             this.tabNhanVien.Controls.Add(this.nv_txtSDT);
             this.tabNhanVien.Controls.Add(this.nv_btnReload);
             this.tabNhanVien.Controls.Add(this.nv_txtNgaySinh);
+            this.tabNhanVien.Controls.Add(this.nv_txtLuong);
             this.tabNhanVien.Controls.Add(this.nv_txtHoTen);
+            this.tabNhanVien.Controls.Add(this.nv_txtGioiTinh);
             this.tabNhanVien.Controls.Add(this.nv_txtMaNV);
             this.tabNhanVien.Controls.Add(this.label4);
             this.tabNhanVien.Controls.Add(this.label3);
+            this.tabNhanVien.Controls.Add(this.label39);
             this.tabNhanVien.Controls.Add(this.label2);
+            this.tabNhanVien.Controls.Add(this.label38);
             this.tabNhanVien.Controls.Add(this.label1);
             this.tabNhanVien.Location = new System.Drawing.Point(4, 25);
             this.tabNhanVien.Name = "tabNhanVien";
@@ -259,7 +267,7 @@ namespace DBMS_CuoiKi
             // 
             // nv_txtSDT
             // 
-            this.nv_txtSDT.Location = new System.Drawing.Point(151, 122);
+            this.nv_txtSDT.Location = new System.Drawing.Point(129, 122);
             this.nv_txtSDT.Name = "nv_txtSDT";
             this.nv_txtSDT.Size = new System.Drawing.Size(219, 23);
             this.nv_txtSDT.TabIndex = 1;
@@ -274,16 +282,37 @@ namespace DBMS_CuoiKi
             this.nv_btnReload.UseVisualStyleBackColor = true;
             this.nv_btnReload.Click += new System.EventHandler(this.nv_btnReload_Click);
             // 
+            // nv_txtNgaySinh
+            // 
+            this.nv_txtNgaySinh.Location = new System.Drawing.Point(129, 87);
+            this.nv_txtNgaySinh.Name = "nv_txtNgaySinh";
+            this.nv_txtNgaySinh.Size = new System.Drawing.Size(219, 23);
+            this.nv_txtNgaySinh.TabIndex = 1;
+            // 
+            // nv_txtLuong
+            // 
+            this.nv_txtLuong.Location = new System.Drawing.Point(478, 49);
+            this.nv_txtLuong.Name = "nv_txtLuong";
+            this.nv_txtLuong.Size = new System.Drawing.Size(219, 23);
+            this.nv_txtLuong.TabIndex = 1;
+            // 
             // nv_txtHoTen
             // 
-            this.nv_txtHoTen.Location = new System.Drawing.Point(151, 52);
+            this.nv_txtHoTen.Location = new System.Drawing.Point(129, 52);
             this.nv_txtHoTen.Name = "nv_txtHoTen";
             this.nv_txtHoTen.Size = new System.Drawing.Size(219, 23);
             this.nv_txtHoTen.TabIndex = 1;
             // 
+            // nv_txtGioiTinh
+            // 
+            this.nv_txtGioiTinh.Location = new System.Drawing.Point(478, 15);
+            this.nv_txtGioiTinh.Name = "nv_txtGioiTinh";
+            this.nv_txtGioiTinh.Size = new System.Drawing.Size(219, 23);
+            this.nv_txtGioiTinh.TabIndex = 1;
+            // 
             // nv_txtMaNV
             // 
-            this.nv_txtMaNV.Location = new System.Drawing.Point(151, 18);
+            this.nv_txtMaNV.Location = new System.Drawing.Point(129, 18);
             this.nv_txtMaNV.Name = "nv_txtMaNV";
             this.nv_txtMaNV.Size = new System.Drawing.Size(219, 23);
             this.nv_txtMaNV.TabIndex = 1;
@@ -306,6 +335,15 @@ namespace DBMS_CuoiKi
             this.label3.TabIndex = 0;
             this.label3.Text = "Ngay Sinh";
             // 
+            // label39
+            // 
+            this.label39.AutoSize = true;
+            this.label39.Location = new System.Drawing.Point(390, 52);
+            this.label39.Name = "label39";
+            this.label39.Size = new System.Drawing.Size(47, 17);
+            this.label39.TabIndex = 0;
+            this.label39.Text = "Luong";
+            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -314,6 +352,15 @@ namespace DBMS_CuoiKi
             this.label2.Size = new System.Drawing.Size(52, 17);
             this.label2.TabIndex = 0;
             this.label2.Text = "Ho Ten";
+            // 
+            // label38
+            // 
+            this.label38.AutoSize = true;
+            this.label38.Location = new System.Drawing.Point(390, 18);
+            this.label38.Name = "label38";
+            this.label38.Size = new System.Drawing.Size(59, 17);
+            this.label38.TabIndex = 0;
+            this.label38.Text = "Gioi Tinh";
             // 
             // label1
             // 
@@ -648,6 +695,7 @@ namespace DBMS_CuoiKi
             this.cthd_btnUpdate.TabIndex = 2;
             this.cthd_btnUpdate.Text = "Update";
             this.cthd_btnUpdate.UseVisualStyleBackColor = true;
+            this.cthd_btnUpdate.Click += new System.EventHandler(this.cthd_btnUpdate_Click);
             // 
             // dgvChiTietHD
             // 
@@ -658,6 +706,7 @@ namespace DBMS_CuoiKi
             this.dgvChiTietHD.RowTemplate.Height = 24;
             this.dgvChiTietHD.Size = new System.Drawing.Size(994, 378);
             this.dgvChiTietHD.TabIndex = 2;
+            this.dgvChiTietHD.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgvChiTietHD_CellMouseClick);
             // 
             // cthd_btnDelete
             // 
@@ -667,6 +716,7 @@ namespace DBMS_CuoiKi
             this.cthd_btnDelete.TabIndex = 2;
             this.cthd_btnDelete.Text = "Delete";
             this.cthd_btnDelete.UseVisualStyleBackColor = true;
+            this.cthd_btnDelete.Click += new System.EventHandler(this.cthd_btnDelete_Click);
             // 
             // cthd_txtGhiChu
             // 
@@ -683,6 +733,7 @@ namespace DBMS_CuoiKi
             this.cthd_btnAdd.TabIndex = 2;
             this.cthd_btnAdd.Text = "Add";
             this.cthd_btnAdd.UseVisualStyleBackColor = true;
+            this.cthd_btnAdd.Click += new System.EventHandler(this.cthd_btnAdd_Click);
             // 
             // cthd_txtSoLuong
             // 
@@ -699,6 +750,7 @@ namespace DBMS_CuoiKi
             this.cthd_btnReload.TabIndex = 2;
             this.cthd_btnReload.Text = "Reload";
             this.cthd_btnReload.UseVisualStyleBackColor = true;
+            this.cthd_btnReload.Click += new System.EventHandler(this.cthd_btnReload_Click);
             // 
             // label16
             // 
@@ -781,6 +833,7 @@ namespace DBMS_CuoiKi
             this.ma_btnUpdate.TabIndex = 2;
             this.ma_btnUpdate.Text = "Update";
             this.ma_btnUpdate.UseVisualStyleBackColor = true;
+            this.ma_btnUpdate.Click += new System.EventHandler(this.ma_btnUpdate_Click);
             // 
             // dgvMonAn
             // 
@@ -791,6 +844,7 @@ namespace DBMS_CuoiKi
             this.dgvMonAn.RowTemplate.Height = 24;
             this.dgvMonAn.Size = new System.Drawing.Size(994, 363);
             this.dgvMonAn.TabIndex = 2;
+            this.dgvMonAn.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvMonAn_CellClick);
             // 
             // ma_btnDelete
             // 
@@ -800,6 +854,7 @@ namespace DBMS_CuoiKi
             this.ma_btnDelete.TabIndex = 2;
             this.ma_btnDelete.Text = "Delete";
             this.ma_btnDelete.UseVisualStyleBackColor = true;
+            this.ma_btnDelete.Click += new System.EventHandler(this.ma_btnDelete_Click);
             // 
             // ma_txtDonVi
             // 
@@ -816,6 +871,7 @@ namespace DBMS_CuoiKi
             this.ma_btnAdd.TabIndex = 2;
             this.ma_btnAdd.Text = "Add";
             this.ma_btnAdd.UseVisualStyleBackColor = true;
+            this.ma_btnAdd.Click += new System.EventHandler(this.ma_btnAdd_Click);
             // 
             // label20
             // 
@@ -834,6 +890,7 @@ namespace DBMS_CuoiKi
             this.ma_btnReload.TabIndex = 2;
             this.ma_btnReload.Text = "Reload";
             this.ma_btnReload.UseVisualStyleBackColor = true;
+            this.ma_btnReload.Click += new System.EventHandler(this.ma_btnReload_Click);
             // 
             // ma_txtDonGia
             // 
@@ -914,6 +971,7 @@ namespace DBMS_CuoiKi
             this.ac_btnUpdate.TabIndex = 2;
             this.ac_btnUpdate.Text = "Update";
             this.ac_btnUpdate.UseVisualStyleBackColor = true;
+            this.ac_btnUpdate.Click += new System.EventHandler(this.ac_btnUpdate_Click);
             // 
             // dgvAccount
             // 
@@ -924,6 +982,7 @@ namespace DBMS_CuoiKi
             this.dgvAccount.RowTemplate.Height = 24;
             this.dgvAccount.Size = new System.Drawing.Size(994, 375);
             this.dgvAccount.TabIndex = 2;
+            this.dgvAccount.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvAccount_CellClick);
             // 
             // ac_btnDelete
             // 
@@ -933,6 +992,7 @@ namespace DBMS_CuoiKi
             this.ac_btnDelete.TabIndex = 2;
             this.ac_btnDelete.Text = "Delete";
             this.ac_btnDelete.UseVisualStyleBackColor = true;
+            this.ac_btnDelete.Click += new System.EventHandler(this.ac_btnDelete_Click);
             // 
             // ac_txtMaNV
             // 
@@ -949,6 +1009,7 @@ namespace DBMS_CuoiKi
             this.ac_btnAdd.TabIndex = 2;
             this.ac_btnAdd.Text = "Add";
             this.ac_btnAdd.UseVisualStyleBackColor = true;
+            this.ac_btnAdd.Click += new System.EventHandler(this.ac_btnAdd_Click);
             // 
             // label24
             // 
@@ -967,6 +1028,7 @@ namespace DBMS_CuoiKi
             this.ac_btnReload.TabIndex = 2;
             this.ac_btnReload.Text = "Reload";
             this.ac_btnReload.UseVisualStyleBackColor = true;
+            this.ac_btnReload.Click += new System.EventHandler(this.ac_btnReload_Click);
             // 
             // ac_txtRole
             // 
@@ -1391,23 +1453,6 @@ namespace DBMS_CuoiKi
             this.tabPage4.Text = "View";
             this.tabPage4.UseVisualStyleBackColor = true;
             // 
-            // tabPage9
-            // 
-            this.tabPage9.Location = new System.Drawing.Point(4, 25);
-            this.tabPage9.Name = "tabPage9";
-            this.tabPage9.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage9.Size = new System.Drawing.Size(1006, 625);
-            this.tabPage9.TabIndex = 9;
-            this.tabPage9.Text = "Function";
-            this.tabPage9.UseVisualStyleBackColor = true;
-            // 
-            // nv_txtNgaySinh
-            // 
-            this.nv_txtNgaySinh.Location = new System.Drawing.Point(151, 87);
-            this.nv_txtNgaySinh.Name = "nv_txtNgaySinh";
-            this.nv_txtNgaySinh.Size = new System.Drawing.Size(219, 23);
-            this.nv_txtNgaySinh.TabIndex = 1;
-            // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -1417,6 +1462,16 @@ namespace DBMS_CuoiKi
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.Size = new System.Drawing.Size(994, 415);
             this.dataGridView1.TabIndex = 0;
+            // 
+            // tabPage9
+            // 
+            this.tabPage9.Location = new System.Drawing.Point(4, 25);
+            this.tabPage9.Name = "tabPage9";
+            this.tabPage9.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage9.Size = new System.Drawing.Size(1006, 625);
+            this.tabPage9.TabIndex = 9;
+            this.tabPage9.Text = "Function";
+            this.tabPage9.UseVisualStyleBackColor = true;
             // 
             // Main
             // 
@@ -1586,6 +1641,10 @@ namespace DBMS_CuoiKi
         private System.Windows.Forms.Button kh_btnReload;
         private System.Windows.Forms.TextBox nv_txtNgaySinh;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.TextBox nv_txtLuong;
+        private System.Windows.Forms.TextBox nv_txtGioiTinh;
+        private System.Windows.Forms.Label label39;
+        private System.Windows.Forms.Label label38;
     }
 }
 
