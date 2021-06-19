@@ -36,25 +36,41 @@ namespace DBMS_CuoiKi
 
         private void nv_btnAdd_Click(object sender, EventArgs e)
         {
-            NhanVien.Add(nv_txtMaNV.Text, nv_txtHoTen.Text, nv_txtNgaySinh.Text, nv_txtSDT.Text);
-            dgvNhanVien.DataSource = NhanVien.Load();
+            try
+            {
+                NhanVien.Add(nv_txtMaNV.Text, nv_txtHoTen.Text, nv_txtNgaySinh.Text, nv_txtSDT.Text);
+                dgvNhanVien.DataSource = NhanVien.Load();
+            }
+            catch { }
         }
 
         private void nv_btnUpdate_Click(object sender, EventArgs e)
         {
-            NhanVien.Update(nv_txtMaNV.Text, nv_txtHoTen.Text, nv_txtNgaySinh.Text, nv_txtSDT.Text);
-            dgvNhanVien.DataSource = NhanVien.Load();
+            try
+            {
+                NhanVien.Update(nv_txtMaNV.Text, nv_txtHoTen.Text, nv_txtNgaySinh.Text, nv_txtSDT.Text);
+                dgvNhanVien.DataSource = NhanVien.Load();
+            }
+            catch { }
         }
 
         private void nv_btnDelete_Click(object sender, EventArgs e)
         {
-            NhanVien.Delete(nv_txtMaNV.Text);
-            dgvNhanVien.DataSource = NhanVien.Load();
+            try
+            {
+                NhanVien.Delete(nv_txtMaNV.Text);
+                dgvNhanVien.DataSource = NhanVien.Load();
+            }
+            catch { }
         }
 
         private void nv_btnReload_Click(object sender, EventArgs e)
         {
-            dgvNhanVien.DataSource = NhanVien.Load();
+            try
+            {
+                dgvNhanVien.DataSource = NhanVien.Load();
+            }
+            catch { }
         }
 
         #endregion 
@@ -72,31 +88,51 @@ namespace DBMS_CuoiKi
 
         private void hd_btnThanhToan_Click(object sender, EventArgs e)
         {
-            HoaDon.ThanhToan(hd_txtMaHD.Text);
-            dgvHoaDon.DataSource = HoaDon.Load();
+            try
+            {
+                HoaDon.ThanhToan(hd_txtMaHD.Text);
+                dgvHoaDon.DataSource = HoaDon.Load();
+            }
+            catch { }
         }
 
         private void hd_btnAdd_Click(object sender, EventArgs e)
         {
-            HoaDon.Add(hd_txtMaHD.Text, hd_txtMaNV.Text, hd_txtMaGiamGia.Text);
-            dgvHoaDon.DataSource = HoaDon.Load();
+            try
+            {
+                HoaDon.Add(hd_txtMaHD.Text, hd_txtMaNV.Text, hd_txtMaGiamGia.Text);
+                dgvHoaDon.DataSource = HoaDon.Load();
+            }
+            catch { }
         }
 
         private void hd_btnUpdate_Click(object sender, EventArgs e)
         {
-            HoaDon.Update(hd_txtMaHD.Text, hd_txtMaNV.Text, hd_txtMaGiamGia.Text);
-            dgvHoaDon.DataSource = HoaDon.Load();
+            try
+            {
+                HoaDon.Update(hd_txtMaHD.Text, hd_txtMaNV.Text, hd_txtMaGiamGia.Text);
+                dgvHoaDon.DataSource = HoaDon.Load();
+            }
+            catch { }
         }
 
         private void hd_btnDelete_Click(object sender, EventArgs e)
         {
-            HoaDon.Delete(hd_txtMaHD.Text);
-            dgvHoaDon.DataSource = HoaDon.Load();
+            try
+            {
+                HoaDon.Delete(hd_txtMaHD.Text);
+                dgvHoaDon.DataSource = HoaDon.Load();
+            }
+            catch { }
         }
 
         private void hd_btnReload_Click(object sender, EventArgs e)
         {
-            dgvHoaDon.DataSource = HoaDon.Load();
+            try
+            {
+                dgvHoaDon.DataSource = HoaDon.Load();
+            }
+            catch { }
         }
 
         #endregion
@@ -112,25 +148,41 @@ namespace DBMS_CuoiKi
 
         private void gg_btnAdd_Click(object sender, EventArgs e)
         {
-            GiamGia.Add(gg_txtMaGG.Text, gg_txtTienGiam.Text, gg_cbxDonVi.Text);
-            dgvGiamGia.DataSource = GiamGia.Load();
+            try
+            {
+                GiamGia.Add(gg_txtMaGG.Text, gg_txtTienGiam.Text, gg_cbxDonVi.Text);
+                dgvGiamGia.DataSource = GiamGia.Load();
+            }
+            catch { }
         }
 
         private void gg_btnUpdate_Click(object sender, EventArgs e)
         {
-            GiamGia.Update(gg_txtMaGG.Text, gg_txtTienGiam.Text, gg_cbxDonVi.Text);
-            dgvGiamGia.DataSource = GiamGia.Load();
+            try
+            {
+                GiamGia.Update(gg_txtMaGG.Text, gg_txtTienGiam.Text, gg_cbxDonVi.Text);
+                dgvGiamGia.DataSource = GiamGia.Load();
+            }
+            catch { }
         }
 
         private void gg_btnDelete_Click(object sender, EventArgs e)
         {
-            GiamGia.Delete(gg_txtMaGG.Text);
-            dgvGiamGia.DataSource = GiamGia.Load();
+            try
+            {
+                GiamGia.Delete(gg_txtMaGG.Text);
+                dgvGiamGia.DataSource = GiamGia.Load();
+            }
+            catch { }
         }
 
         private void gg_btnReload_Click(object sender, EventArgs e)
         {
-            dgvGiamGia.DataSource = GiamGia.Load();
+            try
+            {
+                dgvGiamGia.DataSource = GiamGia.Load();
+            }
+            catch { }
         }
 
         #endregion 
@@ -199,10 +251,6 @@ namespace DBMS_CuoiKi
                 MessageBox.Show(ex.Message);
             }
         }
-
-
-
-
 
         #endregion
     }

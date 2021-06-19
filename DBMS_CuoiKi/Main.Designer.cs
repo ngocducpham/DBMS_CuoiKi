@@ -153,6 +153,7 @@ namespace DBMS_CuoiKi
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.tabPage9 = new System.Windows.Forms.TabPage();
             this.nv_txtNgaySinh = new System.Windows.Forms.TextBox();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.tabControl1.SuspendLayout();
             this.tabNhanVien.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvNhanVien)).BeginInit();
@@ -169,6 +170,8 @@ namespace DBMS_CuoiKi
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvKhachHang)).BeginInit();
             this.tabPage3.SuspendLayout();
+            this.tabPage4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -1379,12 +1382,13 @@ namespace DBMS_CuoiKi
             // 
             // tabPage4
             // 
+            this.tabPage4.Controls.Add(this.dataGridView1);
             this.tabPage4.Location = new System.Drawing.Point(4, 25);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage4.Size = new System.Drawing.Size(1006, 625);
             this.tabPage4.TabIndex = 8;
-            this.tabPage4.Text = "tabPage4";
+            this.tabPage4.Text = "View";
             this.tabPage4.UseVisualStyleBackColor = true;
             // 
             // tabPage9
@@ -1394,7 +1398,7 @@ namespace DBMS_CuoiKi
             this.tabPage9.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage9.Size = new System.Drawing.Size(1006, 625);
             this.tabPage9.TabIndex = 9;
-            this.tabPage9.Text = "tabPage9";
+            this.tabPage9.Text = "Function";
             this.tabPage9.UseVisualStyleBackColor = true;
             // 
             // nv_txtNgaySinh
@@ -1403,6 +1407,16 @@ namespace DBMS_CuoiKi
             this.nv_txtNgaySinh.Name = "nv_txtNgaySinh";
             this.nv_txtNgaySinh.Size = new System.Drawing.Size(219, 23);
             this.nv_txtNgaySinh.TabIndex = 1;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(6, 189);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.Size = new System.Drawing.Size(994, 415);
+            this.dataGridView1.TabIndex = 0;
             // 
             // Main
             // 
@@ -1439,6 +1453,8 @@ namespace DBMS_CuoiKi
             ((System.ComponentModel.ISupportInitialize)(this.dgvKhachHang)).EndInit();
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
+            this.tabPage4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1569,6 +1585,7 @@ namespace DBMS_CuoiKi
         private System.Windows.Forms.Button kh_btnAdd;
         private System.Windows.Forms.Button kh_btnReload;
         private System.Windows.Forms.TextBox nv_txtNgaySinh;
+        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }
 
