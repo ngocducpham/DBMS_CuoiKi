@@ -17,6 +17,7 @@ namespace DBMS_CuoiKi.Business
             return SqlHelper.ExecuteNonQuery("dbo.sp_ThanhToanHoaDon", CommandType.StoredProcedure, para);
         }
 
+        //sp_InsertHoaDon @mahoadon VARCHAR(50), @manhanvien VARCHAR(50), @magiamgia VARCHAR(50)
         public static bool Add(string maHD, string maNV, string maGG)
         {
             SqlParameter para1 = new SqlParameter("@mahoadon", maHD);

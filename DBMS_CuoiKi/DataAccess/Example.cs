@@ -28,15 +28,16 @@ namespace DBMS_CuoiKi.DataAccess
 
         private void CallFunction()
         {
+            //fn_TinhTienHoaDon (@mahoadon VARCHAR(10))
             // function(@para varchar(100)) => return varchar
-            SqlParameter parameter1 = new SqlParameter("@para", "value");
+            SqlParameter parameter1 = new SqlParameter("@mahoadon", "value");
 
             // tao 1 bien chua ket qua
-            SqlParameter res = new SqlParameter("@res", SqlDbType.VarChar);
+            SqlParameter res = new SqlParameter("@res", SqlDbType.Float);
             res.Direction = ParameterDirection.ReturnValue;
 
             // lay ket qua, gia tri nhan duoc o trong bien res
-            SqlHelper.ExecuteScalar("function", CommandType.StoredProcedure, parameter1, res);
+            SqlHelper.ExecuteScalar("dbo.fn_TinhTienHoaDon", CommandType.StoredProcedure, parameter1, res);
             // ep khieu bien res phu hop voi kieu tra ve
             // return (string)res
         }

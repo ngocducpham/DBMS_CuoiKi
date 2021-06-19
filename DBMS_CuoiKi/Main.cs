@@ -51,7 +51,7 @@ namespace DBMS_CuoiKi
                 NhanVien.Update(nv_txtMaNV.Text, nv_txtHoTen.Text, nv_txtNgaySinh.Text, nv_txtSDT.Text);
                 dgvNhanVien.DataSource = NhanVien.Load();
             }
-            catch { }
+            catch(Exception ex) { MessageBox.Show(ex.Message); }
         }
 
         private void nv_btnDelete_Click(object sender, EventArgs e)
